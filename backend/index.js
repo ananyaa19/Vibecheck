@@ -13,7 +13,7 @@ app.post("/authenticate", async (req, res) => {
     const r = await axios.put(
       "https://api.chatengine.io/users/",
       { username, secret: username, first_name: username },
-      { headers: { "private-key": "2f9c2119-5ba9-422a-ba0e-cc6f3630cc9c" } }
+      { headers: { "private-key": "be87dfca-9ff9-4925-8b18-109734816bc5" } }
     );
     return res.status(r.status).json(r.data);
   } catch (e) {
@@ -24,7 +24,7 @@ app.post("/authenticate", async (req, res) => {
 app.get("/chats", async (req, res) => {
   try {
     const r = await axios.get("https://api.chatengine.io/chats/", {
-      headers: { "private-key": "2f9c2119-5ba9-422a-ba0e-cc6f3630cc9c" },
+      headers: { "private-key": "be87dfca-9ff9-4925-8b18-109734816bc5" },
     });
     return res.status(r.status).json(r.data);
   } catch (e) {
@@ -40,7 +40,7 @@ app.patch("/chats/:chatId", async (req, res) => {
     const r = await axios.patch(
       `https://api.chatengine.io/chats/${chatId}`,
       { title },
-      { headers: { "private-key": "2f9c2119-5ba9-422a-ba0e-cc6f3630cc9c" } }
+      { headers: { "private-key": "be87dfca-9ff9-4925-8b18-109734816bc5" } }
     );
     return res.status(r.status).json(r.data);
   } catch (e) {
