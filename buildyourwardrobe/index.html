@@ -38,21 +38,22 @@
     <main>
         <div class="container">
             <aside class="wardrobe-list">
+                <button id="add-wardrobe-button">Add Your Wardrobe</button>
                 <h2>Wardrobes</h2>
                 <ul>
-                    <li class="wardrobe-item">Sam's Wardrobe</li>
-                    <li class="wardrobe-item">Jenny's Wardrobe</li>
-                    <li class="wardrobe-item">Alex's Wardrobe</li>
-                    <li class="wardrobe-item">Chris's Wardrobe</li>
-                    <li class="wardrobe-item">Emily's Wardrobe</li>
-                    <li class="wardrobe-item">Michael's Wardrobe</li>
-                    <li class="wardrobe-item">Sophia's Wardrobe</li>
-                    <li class="wardrobe-item">Liam's Wardrobe</li>
+                    <li class="wardrobe-item" data-owner="sam">Sam's Wardrobe</li>
+                    <li class="wardrobe-item" data-owner="jenny">Jenny's Wardrobe</li>
+                    <li class="wardrobe-item" data-owner="alex">Alex's Wardrobe</li>
+                    <li class="wardrobe-item" data-owner="chris">Chris's Wardrobe</li>
+                    <li class="wardrobe-item" data-owner="emily">Emily's Wardrobe</li>
+                    <li class="wardrobe-item" data-owner="michael">Michael's Wardrobe</li>
+                    <li class="wardrobe-item" data-owner="sophia">Sophia's Wardrobe</li>
+                    <li class="wardrobe-item" data-owner="liam">Liam's Wardrobe</li>
                 </ul>
             </aside>
             <section class="wardrobe-content">
-                <h2>Sam's Wardrobe</h2>
-                <div class="clothes-gallery">
+                <h2 id="wardrobe-owner">Sam's Wardrobe</h2>
+                <div id="wardrobe-items" class="clothes-gallery">
                     <img src="oufit1.jpg" alt="Clothes 1">
                     <img src="oufit2.jpg" alt="Clothes 2">
                     <img src="oufit3.jpg" alt="Clothes 3">
@@ -62,13 +63,17 @@
                     <button class="like-button">Like</button>
                     <div class="comment-box">
                         <input type="text" placeholder="Add a comment...">
-                        <button>Comment</button>
+                        <button id="post-comment">Comment</button>
                     </div>
+                </div>
+                <div id="comments-section" class="comments-section">
+                    <h3>Comments</h3>
+                    <ul id="comments-list"></ul>
                 </div>
             </section>
             <div class="leaderboard">
                 <h2>Leaderboard</h2>
-                <ol>
+                <ol id="leaderboard-list">
                     <li class="leaderboard-item">
                         <div class="leaderboard-name">Sam</div>
                         <div class="leaderboard-likes">Points: 100K</div>
