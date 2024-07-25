@@ -1,0 +1,133 @@
+body {
+    background-image: url('./assets/valley.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: pink;
+    overflow: hidden;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+}
+
+.logo img {
+    width: 50px;
+    height: 45px;
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.search-bar {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: grey;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-wishlist-bag {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 50px;
+    /* Adjust this value to shift the text further below */
+    margin-bottom: 0%;
+    color: #FFF5EE;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.profile-wishlist-bag a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 0%;
+    /* Adjust top margin */
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 40px 60px;
+    margin-top: 0%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.box:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
